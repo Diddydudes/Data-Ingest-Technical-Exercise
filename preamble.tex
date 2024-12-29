@@ -1,0 +1,29 @@
+
+\usepackage{graphicx}			% Use this package to include images
+\usepackage{amsmath}			% A library of many standard math expressions
+\usepackage[margin=1in]{geometry}% Sets 1in margins. 
+\usepackage{fancyhdr}			% Creates headers and footers
+\usepackage[style=ddmmyyyy]{datetime2}
+\usepackage{enumerate}          %These two package give custom labels to a list
+\usepackage[shortlabels]{enumitem}
+
+% Creates the header and footer. You can adjust the look and feel of these here.
+\pagestyle{fancy}
+\fancyhead[l]{Daniel Outten}
+\fancyhead[c]{Data Ingest Engineer - Technical Exercise}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt} %Creates a horizontal line underneath the header
+\setlength{\headheight}{15pt} %Sets enough space for the header
+
+% Make title
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+% Title command
+\title{
+    \vspace{-0.8in} 	% Slightly adjust the space to avoid cutting off content
+    \usefont{OT1}{bch}{b}{n}  % Custom font settings
+    \horrule{0.5pt} \\[0.4cm]  % First horizontal rule
+    \huge Data Ingest Engineer - Technical Exercise \\  % Title text
+    \horrule{2pt} \\[0.5cm]  % Second horizontal rule
+}
